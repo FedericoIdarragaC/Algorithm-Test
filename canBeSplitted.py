@@ -5,16 +5,13 @@ import numpy as np
     this function will return true otherwise it will return False.
 '''
 def equalSplits(array,index):
-    left_array = array[:index]
-    right_array = array[index:]
-    
     sum_left = 0
     sum_right = 0
     
-    for num in left_array:
+    for num in array[:index]:
         sum_left += num
     
-    for num in right_array:
+    for num in array[index:]:
         sum_right += num
     
     return sum_right == sum_left
