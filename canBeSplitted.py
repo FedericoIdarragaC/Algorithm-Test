@@ -26,4 +26,12 @@ def canBeSplitted(array):
             flag = 1
     return flag
 
-print(canBeSplitted(np.array([1,3,3,8,4,3,2,3,3])))
+array = list()
+num = input("Enter how many elements you want: ")
+print ('Enter elements in array: ')
+for i in range(int(num)):
+    n = input("num : ")
+    array.append(int(n))
+print ('ARRAY: ',array)
+
+print("Can be splitted: ",canBeSplitted(np.array(array)))
